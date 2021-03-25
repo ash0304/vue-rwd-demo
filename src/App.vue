@@ -4,6 +4,7 @@
     <Header @toggleSideDrawer="toggleSideDrawer" />
     <v-main>
       <v-container fluid>
+        <div class="fn">Fortnie</div>
         <router-view />
       </v-container>
     </v-main>
@@ -14,14 +15,14 @@
 <script>
 import Header from "./components/Header";
 import SideDrawer from "./components/SideDrawer";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     Header,
     SideDrawer,
-    Footer
+    Footer,
   },
   data() {
     return {
@@ -35,3 +36,13 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+@font-face {
+  font-family: fortniteFonts;
+  src: url("./assets/fonts/FortniteFont.otf");
+}
+.fn {
+    font-family:fortniteFonts;
+}
+</style>
+

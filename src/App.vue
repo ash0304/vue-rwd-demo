@@ -3,8 +3,7 @@
     <SideDrawer ref="sideDrawer" />
     <Header @toggleSideDrawer="toggleSideDrawer" />
     <v-main>
-      <v-container fluid>
-        <div class="fn">Fortnie</div>
+      <v-container fluid class="pa-0">
         <router-view />
       </v-container>
     </v-main>
@@ -42,7 +41,7 @@ export default {
   src: url("./assets/fonts/FortniteFont.otf");
 }
 .fn {
-    font-family:fortniteFonts;
+  font-family: fortniteFonts;
 }
 </style>
 

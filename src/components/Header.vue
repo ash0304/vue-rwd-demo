@@ -1,11 +1,11 @@
 <template>
   <!-- 主導覽列 -->
-  <v-app-bar app color="gray" dark>
+  <v-app-bar app dark height="50px">
     <v-app-bar-nav-icon
       @click="toggleSideDrawer"
       class="hidden-md-and-up"
     ></v-app-bar-nav-icon>
-    <v-toolbar-title :to="'/'">
+    <v-toolbar-title @click="toHome">
       <v-img
         class="shrink mt-1"
         contain
@@ -65,6 +65,11 @@ export default {
     toggleSideDrawer() {
       this.$emit("toggleSideDrawer");
     },
+    toHome() {
+      this.$router.push({
+        name: 'Home'
+      })
+    }
   },
 };
 </script>

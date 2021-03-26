@@ -1,9 +1,15 @@
 <template>
-  <v-carousel v-model="model">
-    <v-carousel-item v-for="(color, i) in colors" :key="color">
-      <v-sheet :color="color" height="100%" tile>
+  <v-carousel
+    v-model="model"
+    :continuous="false"
+    :cycle="true"
+    hide-delimiters
+    :height="'auto'"
+  >
+    <v-carousel-item v-for="(item, index) in carouselItem" :key="index">
+      <v-sheet height="100%" tile>
         <v-row class="fill-height" align="center" justify="center">
-          <div class="display-3">Slide {{ i + 1 }}</div>
+          <div :style="carouselObj(item)"></div>
         </v-row>
       </v-sheet>
     </v-carousel-item>
@@ -15,8 +21,34 @@ export default {
   data() {
     return {
       model: 0,
-      colors: ["primary", "secondary", "yellow darken-2", "red", "orange"],
+      height: "900px",
+      carouselItem: [
+        {
+          src: require(`../assets/images/home/carousel01.jpg`),
+        },
+        {
+          src: require(`../assets/images/home/carousel02.jpg`),
+        },
+        {
+          src: require(`../assets/images/home/carousel03.jpg`),
+        },
+      ],
     };
+  },
+  methods: {
+    carouselObj(item) {
+      return {
+        width: "100%",
+        height: "100%",
+        'min-height': '488px',
+        background: `url(${item.src})`,
+        "background-position": "center center",
+        "background-size": "cover",
+        "padding-top": "56.25%",
+      };
+    },
   },
 };
 </script>
+<style lang="scss" scoped>
+</style>

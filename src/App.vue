@@ -37,11 +37,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 @font-face {
-  font-family: fortniteFonts;
-  src: url("./assets/fonts/FortniteFont.otf");
-}
-.fn {
-  font-family: fortniteFonts;
+  font-family: BurbankBigRegular-Black;
+  src: url("./assets/fonts/BurbankBigRegular-Black.otf");
 }
 </style>
 

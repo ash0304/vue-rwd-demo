@@ -35,10 +35,5 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-@font-face {
-  font-family: BurbankBigRegular-Black;
-  src: url("./assets/fonts/BurbankBigRegular-Black.otf");
-}
-</style>
+
 

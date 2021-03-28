@@ -1,3 +1,7 @@
+@font-face {
+  font-family: BurbankBigRegular-Black;
+  src: url("../assets/fonts/BurbankBigRegular-Black.otf");
+}
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +10,9 @@
 button:focus {
     outline: 0;
 }
-
+.fs-font {
+  font-family: BurbankBigRegular-Black;
+}
 .fortnite-btn {
     position: relative;
     display: inline-block;

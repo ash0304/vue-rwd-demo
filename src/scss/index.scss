@@ -107,6 +107,54 @@ button:focus {
       );
     }
   }
+  .video-play-button {
+    width: 5.4em;
+    height: 5.4em;
+    background-color: rgba(0,0,0,.3);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    border: .2em solid #fff;
+    border-image: none;
+    border-image: initial;
+    transition: all .3s cubic-bezier(.215,.61,.355,1) 0s;
+    margin: 0;
+    font-size: 0.8vw;
+    border-color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.5);
+    span {
+      border-left: 1.8em solid rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      left: .2em;
+      width: 0;
+      height: 0;
+      border-top: 1.2em solid transparent;
+      border-bottom: 1.2em solid transparent;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   @keyframes jelly {
     0% {
       -webkit-transform: matrix(1, 0, 0, 1, 0, 0);

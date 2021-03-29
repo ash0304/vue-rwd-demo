@@ -11,9 +11,9 @@ const routes = [
         component: () => import('./views/Home.vue'),
     },
     {
-        path: '/Creative',
-        name: 'Creative',
-        component: () => import('./views/Creative.vue')
+        path: '/BattleRoyale',
+        name: 'BattleRoyale',
+        component: () => import('./views/BattleRoyale.vue')
     },
     {
         path: '/BattlePass',

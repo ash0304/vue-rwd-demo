@@ -45,10 +45,8 @@ export default {
   data() {
     return {
       menuItem: [
-        { title: "BATTLE PASS", to: "/BattlePass" },
         { title: "CREW", to: "/Crew" },
         { title: "V-BUCKS", to: "/VBucks" },
-        { title: "COMPETITIVE", to: "/Competitive" },
         { title: "NEWS", to: "/News" },
         { title: "MERCH", to: "/Merch" },
         { title: "COSPLAY", to: "/Cosplay" },
@@ -56,8 +54,7 @@ export default {
       ],
       modes: [
         { id: 1, title: "BATTLE ROYALE", to: "/BattleRoyale" },
-        { id: 2, title: "CREATIVE", to: "/Creative" },
-        { id: 3, title: "SAVE THE WORLD", to: "/SaveTheWorld" },
+        { id: 2, title: "SAVE THE WORLD", to: "/SaveTheWorld" },
       ],
     };
   },

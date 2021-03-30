@@ -1,6 +1,6 @@
 <template>
   <!-- 側邊導覽列 -->
-  <v-navigation-drawer v-model="sideNav" temporary absolute top dark app>
+  <v-navigation-drawer v-model="sideNav" temporary dark app>
     <v-list-group>
       <template v-slot:activator>
         <v-list-item-title>MODES</v-list-item-title>

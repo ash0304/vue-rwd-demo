@@ -50,8 +50,6 @@ export default {
         { title: "V-BUCKS", to: "/VBucks" },
         { title: "NEWS", to: "/News" },
         { title: "MERCH", to: "/Merch", link: "https://www.amazon.com/fortnite" },
-        { title: "COSPLAY", to: "/Cosplay" },
-        { title: "HELP", to: "/Help" },
       ],
       modes: [
         { id: 1, title: "BATTLE ROYALE", to: "/BattleRoyale" },

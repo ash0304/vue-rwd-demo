@@ -16,6 +16,11 @@ const routes = [
         component: () => import('./views/BattleRoyale.vue')
     },
     {
+        path: '/SaveTheWorld',
+        name: 'SaveTheWorld',
+        component: () => import('./views/SaveTheWorld.vue')
+    },
+    {
         path: '/Crew',
         name: 'Crew',
         component: () => import('./views/Crew.vue')
@@ -29,11 +34,6 @@ const routes = [
         path: '/News',
         name: 'News',
         component: () => import('./views/News.vue')
-    },
-    {
-        path: '/Cosplay',
-        name: 'Cosplay',
-        component: () => import('./views/Cosplay.vue')
     },
 ],
 

@@ -10,7 +10,7 @@
       </v-list-item>
     </v-list-group>
     <v-list>
-      <v-list-item v-for="(item, index) in menuItem" :key="index" :to="item.to" link>
+      <v-list-item v-for="(item, index) in menuItem" :key="index" link @click="toTarget(item)">
         <v-list-item-title>{{ item.title }}</v-list-item-title>
       </v-list-item>
     </v-list>
@@ -23,21 +23,26 @@ export default {
     return {
       sideNav: false,
       menuItem: [
-        { title: "BATTLE PASS", to: "/BattlePass" },
         { title: "CREW", to: "/Crew" },
-        { title: "V-BUCKS", to: "/VBucks" },
-        { title: "COMPETITIVE", to: "/Competitive" },
         { title: "NEWS", to: "/News" },
-        { title: "MERCH", to: "/Merch" },
-        { title: "COSPLAY", to: "/Cosplay" },
-        { title: "HELP", to: "/Help" },
+        { title: "MERCH", to: "/Merch", link: "https://www.amazon.com/fortnite" },
       ],
       modes: [
         { id: 1, title: "BATTLE ROYALE", to: "/BattleRoyale" },
-        { id: 2, title: "CREATIVE", to: "/Creative" },
         { id: 3, title: "SAVE THE WORLD", to: "/SaveTheWorld" },
       ],
     };
   },
+  methods: {
+    toTarget(item) {
+      if (item.title === 'MERCH') {
+        window.open(item.link, "_blank")
+      }else {
+        this.$router.push({
+          path: item.to
+        })
+      }
+    }
+  }
 };
 </script>

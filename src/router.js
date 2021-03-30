@@ -16,10 +16,25 @@ const routes = [
         component: () => import('./views/BattleRoyale.vue')
     },
     {
-        path: '/BattlePass',
-        name: 'BattlePass',
-        component: () => import('./views/BattlePass.vue')
-    }
+        path: '/Crew',
+        name: 'Crew',
+        component: () => import('./views/Crew.vue')
+    },
+    {
+        path: '/VBucks',
+        name: 'VBucks',
+        component: () => import('./views/VBucks.vue')
+    },
+    {
+        path: '/News',
+        name: 'News',
+        component: () => import('./views/News.vue')
+    },
+    {
+        path: '/Cosplay',
+        name: 'Cosplay',
+        component: () => import('./views/Cosplay.vue')
+    },
 ],
 
 router = new VueRouter({

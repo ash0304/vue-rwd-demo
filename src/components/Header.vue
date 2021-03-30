@@ -26,6 +26,7 @@
             v-for="mode in modes"
             :key="mode.id"
             class="list-custom-item"
+            link
             :to="mode.to"
           >
             {{ mode.title }}
@@ -33,7 +34,7 @@
         </v-list>
       </v-menu>
       <!-- OTHERS -->
-      <v-btn v-for="item in menuItem" :key="item.title" router :to="item.to">
+      <v-btn v-for="item in menuItem" :key="item.title" router @click="toTarget(item)">
         {{ item.title }}
       </v-btn>
     </v-toolbar-items>
@@ -48,7 +49,7 @@ export default {
         { title: "CREW", to: "/Crew" },
         { title: "V-BUCKS", to: "/VBucks" },
         { title: "NEWS", to: "/News" },
-        { title: "MERCH", to: "/Merch" },
+        { title: "MERCH", to: "/Merch", link: "https://www.amazon.com/fortnite" },
         { title: "COSPLAY", to: "/Cosplay" },
         { title: "HELP", to: "/Help" },
       ],
@@ -66,6 +67,15 @@ export default {
       this.$router.push({
         name: 'Home'
       })
+    },
+    toTarget(item) {
+      if (item.title === 'MERCH') {
+        window.open(item.link, "_blank")
+      }else {
+        this.$router.push({
+          path: item.to
+        })
+      }
     }
   },
 };

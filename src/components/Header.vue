@@ -12,6 +12,7 @@
         min-width="100"
         src="../assets/images/home/logo.png"
         width="100"
+        style="cursor: pointer"
       />
     </v-toolbar-title>
     <v-spacer></v-spacer>
@@ -47,7 +48,6 @@ export default {
     return {
       menuItem: [
         { title: "CREW", to: "/Crew" },
-        { title: "V-BUCKS", to: "/VBucks" },
         { title: "NEWS", to: "/News" },
         { title: "MERCH", to: "/Merch", link: "https://www.amazon.com/fortnite" },
       ],

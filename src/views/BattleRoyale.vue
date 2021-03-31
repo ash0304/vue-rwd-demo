@@ -71,16 +71,14 @@
           <div
             :class="`screen-content screen-content-${index}`"
             data-aos="fade-up"
-            :data-aos-delay="index * 500"
+            :data-aos-delay="index * 400"
             data-aos-once="true"
           >
             <h1>
               <span>{{ item.title }}</span>
             </h1>
             <h4>
-              <span>
-                {{ item.content }}
-              </span>
+              {{ item.content }}
             </h4>
           </div>
         </div>
@@ -171,9 +169,9 @@ export default {
       display: block;
       padding: 1em 0px;
       .fn-logo {
-        width: 15vw;
+        width: 20vw;
         margin-bottom: -5%;
-        margin-top: -6%;
+        margin-top: -7%;
         vertical-align: middle;
       }
       h1 {
@@ -195,7 +193,7 @@ export default {
   .play-btn-area {
     position: absolute;
     height: 4em;
-    width: 30em;
+    width: 25em;
     bottom: 13%;
     right: 3%;
     .play-btn-touch-area {
@@ -226,7 +224,7 @@ export default {
     color: black;
     width: 70%;
     margin: auto;
-    font-size: 1.25vw;
+    font-size: 2em;
     line-height: 90%;
   }
   &:first-child {
@@ -244,6 +242,9 @@ export default {
     width: 80%;
     h1 {
       font-size: 2em;
+    }
+    h4 {
+      font-size: 1em;
     }
   }
 }

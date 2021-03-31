@@ -1,7 +1,7 @@
 <template>
   <v-container
     fluid
-    class="px-lg-16 px-md-16 px-sm-8 pb-12"
+    class="px-lg-16 px-md-16 px-sm-8 px-xs-0 pb-12"
     data-aos="fade-up"
     data-aos-once="true"
   >
@@ -181,7 +181,7 @@ export default {
     }
     .custom {
       min-height: 100px;
-      color: black;
+      color: white;
       transition: transform 0.3s ease-in-out;
       text-transform: uppercase;
       .main {

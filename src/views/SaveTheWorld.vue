@@ -394,7 +394,7 @@ export default {
           right: -50px;
         }
         h3 {
-          font-size: 4em;
+          font-size: 2em;
         }
         .price {
           font-size: 4em;
